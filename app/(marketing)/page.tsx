@@ -22,7 +22,7 @@ export default function Home() {
         <h1 className="text-cl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center">
           Learn, Practice, and master new languages with LearnLang
         </h1>
-        <div>
+        <div className="flex flex-col items-center gap-y-3 max-w-[330px] w-full">
           <ClerkLoading>
             <Loader className="h-5 w-5 animate-spin text-muted-foreground" />
           </ClerkLoading>

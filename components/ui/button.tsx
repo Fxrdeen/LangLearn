@@ -26,7 +26,7 @@ const buttonVariants = cva(
         ghost:
           "bg-transparent text-slate-500 hover:bg-slate-100 border-transparent border-0 ",
         sidebar:
-          "bg-transparent text-slate-500 hover:bg-slate-100 border-transparent border-2 transition-none ",
+          "bg-transparent text-slate-500 hover:bg-slate-200 border-transparent border-2 transition-none ",
         sidebarOutline:
           "bg-sky-500/15 text-sky-500 border-sky-500 border-2 hover:bg-sky-500/20 transition-none ",
       },
