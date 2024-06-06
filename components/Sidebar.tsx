@@ -36,7 +36,7 @@ const Sidebar = ({ className }: Props) => {
     <div
       className={cn(
         className,
-        "flex  h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 border-r-2 flex-col"
+        "flex h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 border-r-2 flex-col"
       )}
     >
       <Link href={"/learn"}>
