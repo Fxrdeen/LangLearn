@@ -6,7 +6,7 @@ type Props = {
   onCheck: () => void;
   status: "correct" | "wrong" | "none" | "completed";
   disabled?: boolean;
-  lessonId: boolean;
+  lessonId?: number;
 };
 const Footer = ({ lessonId, onCheck, status, disabled }: Props) => {
   useKey("Enter", onCheck, {}, [onCheck]);
