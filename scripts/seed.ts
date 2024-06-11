@@ -89,6 +89,20 @@ const main = async () => {
         question: "Which one these is the 'man'?",
         order: 1,
       },
+      {
+        id: 2,
+        lessonId: 1,
+        type: "ASSIST",
+        question: "'The Man'",
+        order: 2,
+      },
+      {
+        id: 3,
+        lessonId: 1,
+        type: "SELECT",
+        question: "Which one of these is 'the robot'",
+        order: 3,
+      },
     ]);
     await db.insert(schema.challengeOptions).values([
       {
@@ -115,7 +129,53 @@ const main = async () => {
         audioSrc: "/es_robot.mp3",
         correct: false,
       },
+      {
+        id: 4,
+        challengeId: 2,
+        text: "el hombre",
+        audioSrc: "/es_man.mp3",
+        correct: true,
+      },
+      {
+        id: 5,
+        challengeId: 2,
+        text: "la mujer",
+        audioSrc: "/es_woman.mp3",
+        correct: false,
+      },
+      {
+        id: 6,
+        challengeId: 2,
+        text: "el robot",
+        audioSrc: "/es_robot.mp3",
+        correct: false,
+      },
+      {
+        id: 7,
+        challengeId: 3,
+        text: "el hombre",
+        imageSrc: "/man.svg",
+        audioSrc: "/es_man.mp3",
+        correct: false,
+      },
+      {
+        id: 8,
+        challengeId: 3,
+        text: "la mujer",
+        imageSrc: "/woman.svg",
+        audioSrc: "/es_woman.mp3",
+        correct: false,
+      },
+      {
+        id: 9,
+        challengeId: 3,
+        text: "el robot",
+        imageSrc: "/robot.svg",
+        audioSrc: "/es_robot.mp3",
+        correct: true,
+      },
     ]);
+
     console.log("seeding done");
   } catch (error) {
     console.log(error);
