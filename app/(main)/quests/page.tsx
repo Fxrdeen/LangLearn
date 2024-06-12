@@ -7,7 +7,7 @@ import { getUserProgress } from "@/db/queries";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
-export const quests = [
+const quests = [
   {
     title: "Earn 20 XP",
     value: 20,

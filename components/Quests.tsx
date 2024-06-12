@@ -2,11 +2,33 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { Progress } from "./ui/progress";
-import { quests } from "@/app/(main)/quests/page";
 import { getUserProgress } from "@/db/queries";
 type Props = {
   points: number;
 };
+const quests = [
+  {
+    title: "Earn 20 XP",
+    value: 20,
+  },
+  {
+    title: "Earn 50 XP",
+    value: 50,
+  },
+  {
+    title: "Earn 100 XP",
+    value: 100,
+  },
+  {
+    title: "Earn 500 XP",
+    value: 500,
+  },
+  {
+    title: "Earn 1000 XP",
+    value: 1000,
+  },
+];
+
 const Quests = async ({ points }: Props) => {
   const userProgressData = await getUserProgress();
   if (!userProgressData) return null;
