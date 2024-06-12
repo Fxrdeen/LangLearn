@@ -1,8 +1,16 @@
 import MobileHeader from "@/components/MobileHeader";
 import Sidebar from "@/components/Sidebar";
+import { Metadata } from "next";
 import React from "react";
 type Props = {
   children: React.ReactNode;
+};
+export const metadata: Metadata = {
+  title: "LearnLang",
+  description: "Learn Different languages",
+  icons: {
+    icon: "/mascot.svg",
+  },
 };
 const MainLayout = ({ children }: Props) => {
   return (
